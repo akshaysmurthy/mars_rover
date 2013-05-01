@@ -1,7 +1,7 @@
-require_relative 'position'
-require_relative "direction"
-
 class Rover
+  require_relative 'position'
+  require_relative "direction"
+
   attr_accessor :position, :orientation
 
   def initialize(attributes)

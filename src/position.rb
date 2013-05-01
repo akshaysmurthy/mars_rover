@@ -22,4 +22,5 @@ class Position
   def right
     @x+= 1
   end
+  
 end

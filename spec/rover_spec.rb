@@ -13,7 +13,7 @@ describe Rover do
   it "should have a position and orientation" do
     @rover.x.should eql(1)
     @rover.y.should eql(2)
-    @rover.orientation.current.should eql("N")
+    @rover.orientation.should eql("N")
   end
 
   it "should set the position and orientation" do
@@ -24,12 +24,12 @@ describe Rover do
                           })
     @rover.x.should eql(3)
     @rover.y.should eql(1)
-    @rover.orientation.current.should eql("S")
+    @rover.orientation.should eql("S")
   end
 
   it "should reorient" do
     @rover.reorient("S")
-    @rover.orientation.current.should eql("S")
+    @rover.orientation.should eql("S")
   end
 
   context "Movement" do    
